@@ -1,6 +1,7 @@
 class Max {
     /**
      * Implementation of Max Algorithm
+     * 
      * @param num - Array of elements.
      * @return Max element
      */
@@ -16,9 +17,14 @@ class Max {
     }
 
     public static void main(String[] args) {
-        int[] numbers = {12, 94, 16, 44, 35};
+        int[] numbers = { 12, 94, 16, 44, 35 };
         var findMax = new Max();
         int maxNum = findMax.max(numbers);
         System.out.println("Maximum element is : " + maxNum);
+
+        /*
+         * Output
+         * Maximum element is : 94
+         */
     }
 }

@@ -4,6 +4,7 @@ class StraightMaxMin {
 
     /**
      * Implementation of Straight Forward algorithm
+     * 
      * @param num - Array of numbers
      */
     public void straightMaxMin(int[] num) {
@@ -15,7 +16,7 @@ class StraightMaxMin {
             if (num[i] > max) {
                 max = num[i];
             }
-            if (num[i] < min){
+            if (num[i] < min) {
                 min = num[i];
             }
         }
@@ -29,9 +30,15 @@ class StraightMaxMin {
     }
 
     public static void main(String[] args) {
-        int[] num = {22, 13, -5, -8, 15, 60, 17, 31, 47};
-        
+        int[] num = { 22, 13, -5, -8, 15, 60, 17, 31, 47 };
+
         var findMaxAndMin = new StraightMaxMin();
         findMaxAndMin.straightMaxMin(num);
+
+        /*
+         * Output:
+         * Max element : 60
+         * Min element : -8
+         */
     }
 }

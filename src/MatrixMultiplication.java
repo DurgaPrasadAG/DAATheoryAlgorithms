@@ -1,7 +1,8 @@
 class MatrixMultiplication {
-    
+
     /**
      * Implmentation of Matrix Multiplication Algorithm
+     * 
      * @param matrixA - 2D Array of matrix A
      * @param matrixB - 2D Array of matrix B
      * @return - result of Matrix A * Matrix b
@@ -17,25 +18,18 @@ class MatrixMultiplication {
                 }
             }
         }
-        
+
         return result;
     }
-    public static void main(String[] args) {
-        int[][] matrixA = {
-            {1, 2, 3},
-            {7, 8, 9},
-            {4, 5, 6}
-        };
 
-        int[][] matrixB = {
-            {9, 8, 7},
-            {6, 5, 4},
-            {3, 2, 1}
-        };
+    public static void main(String[] args) {
+        int[][] matrixA = { { 1, 2, 3 }, { 7, 8, 9 }, { 4, 5, 6 } };
+
+        int[][] matrixB = { { 9, 8, 7 }, { 6, 5, 4 }, { 3, 2, 1 } };
 
         var matrixMul = new MatrixMultiplication();
         int[][] result = matrixMul.matrixMultiplication(matrixA, matrixB);
-        
+
         System.out.println("Matrix Multiplication : ");
         for (int i = 0; i < matrixA.length; i++) {
             for (int j = 0; j < matrixB.length; j++) {
@@ -43,5 +37,13 @@ class MatrixMultiplication {
             }
             System.out.println();
         }
-    }    
+
+        /*
+         * Output:
+         *  Matrix Multiplication :
+         *  30      20      18
+         *  138     114     90
+         *  84      69      54
+         */
+    }
 }
